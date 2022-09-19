@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MatchModelStoreContainer" CdmEntityContainer="MatchEntities">
+    <EntitySetMapping Name="Activity">
+      <EntityTypeMapping TypeName="MatchModel.Activity">
+        <MappingFragment StoreEntitySet="Activity">
+          <ScalarProperty Name="activity_id" ColumnName="activity_id" />
+          <ScalarProperty Name="activity_type_id" ColumnName="activity_type_id" />
+          <ScalarProperty Name="activity_name" ColumnName="activity_name" />
+          <ScalarProperty Name="activity_datetime" ColumnName="activity_datetime" />
+          <ScalarProperty Name="place_id" ColumnName="place_id" />
+          <ScalarProperty Name="member_id" ColumnName="member_id" />
+          <ScalarProperty Name="activity_create_date" ColumnName="activity_create_date" />
+          <ScalarProperty Name="activity_join_deadline" ColumnName="activity_join_deadline" />
+          <ScalarProperty Name="activity_lower" ColumnName="activity_lower" />
+          <ScalarProperty Name="activity_upper" ColumnName="activity_upper" />
+          <ScalarProperty Name="activity_description" ColumnName="activity_description" />
+          <ScalarProperty Name="state_id" ColumnName="state_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Activity_detail">
+      <EntityTypeMapping TypeName="MatchModel.Activity_detail">
+        <MappingFragment StoreEntitySet="Activity_detail">
+          <ScalarProperty Name="activity_detail_number" ColumnName="activity_detail_number" />
+          <ScalarProperty Name="activity_id" ColumnName="activity_id" />
+          <ScalarProperty Name="member_id" ColumnName="member_id" />
+          <ScalarProperty Name="join_date" ColumnName="join_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Activity_type">
+      <EntityTypeMapping TypeName="MatchModel.Activity_type">
+        <MappingFragment StoreEntitySet="Activity_type">
+          <ScalarProperty Name="activity_type_id" ColumnName="activity_type_id" />
+          <ScalarProperty Name="activity_type_name" ColumnName="activity_type_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Friend">
+      <EntityTypeMapping TypeName="MatchModel.Friend">
+        <MappingFragment StoreEntitySet="Friend">
+          <ScalarProperty Name="friend_number" ColumnName="friend_number" />
+          <ScalarProperty Name="friend_member1" ColumnName="friend_member1" />
+          <ScalarProperty Name="friend_member2" ColumnName="friend_member2" />
+          <ScalarProperty Name="friend_create_date" ColumnName="friend_create_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Member">
+      <EntityTypeMapping TypeName="MatchModel.Member">
+        <MappingFragment StoreEntitySet="Member">
+          <ScalarProperty Name="member_id" ColumnName="member_id" />
+          <ScalarProperty Name="member_account" ColumnName="member_account" />
+          <ScalarProperty Name="member_password" ColumnName="member_password" />
+          <ScalarProperty Name="member_name" ColumnName="member_name" />
+          <ScalarProperty Name="member_id_name" ColumnName="member_id_name" />
+          <ScalarProperty Name="member_gender" ColumnName="member_gender" />
+          <ScalarProperty Name="member_birthday" ColumnName="member_birthday" />
+          <ScalarProperty Name="member_cellphone" ColumnName="member_cellphone" />
+          <ScalarProperty Name="member_email" ColumnName="member_email" />
+          <ScalarProperty Name="member_address" ColumnName="member_address" />
+          <ScalarProperty Name="right_id" ColumnName="right_id" />
+          <ScalarProperty Name="member_photo_file" ColumnName="member_photo_file" />
+          <ScalarProperty Name="member_create_date" ColumnName="member_create_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Place">
+      <EntityTypeMapping TypeName="MatchModel.Place">
+        <MappingFragment StoreEntitySet="Place">
+          <ScalarProperty Name="place_id" ColumnName="place_id" />
+          <ScalarProperty Name="place_type_id" ColumnName="place_type_id" />
+          <ScalarProperty Name="shop_name" ColumnName="shop_name" />
+          <ScalarProperty Name="place_address" ColumnName="place_address" />
+          <ScalarProperty Name="place_phone" ColumnName="place_phone" />
+          <ScalarProperty Name="place_hours_start" ColumnName="place_hours_start" />
+          <ScalarProperty Name="place_hours_end" ColumnName="place_hours_end" />
+          <ScalarProperty Name="place_create_date" ColumnName="place_create_date" />
+          <ScalarProperty Name="place_photo_file" ColumnName="place_photo_file" />
+          <ScalarProperty Name="place_description" ColumnName="place_description" />
+          <ScalarProperty Name="place_shutdown" ColumnName="place_shutdown" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Place_off_day">
+      <EntityTypeMapping TypeName="MatchModel.Place_off_day">
+        <MappingFragment StoreEntitySet="Place_off_day">
+          <ScalarProperty Name="place_off_day_number" ColumnName="place_off_day_number" />
+          <ScalarProperty Name="place_id" ColumnName="place_id" />
+          <ScalarProperty Name="place_off_day1" ColumnName="place_off_day" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Place_type">
+      <EntityTypeMapping TypeName="MatchModel.Place_type">
+        <MappingFragment StoreEntitySet="Place_type">
+          <ScalarProperty Name="place_type_id" ColumnName="place_type_id" />
+          <ScalarProperty Name="place_type_name" ColumnName="place_type_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Right">
+      <EntityTypeMapping TypeName="MatchModel.Right">
+        <MappingFragment StoreEntitySet="Right">
+          <ScalarProperty Name="right_id" ColumnName="right_id" />
+          <ScalarProperty Name="right_name" ColumnName="right_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="State">
+      <EntityTypeMapping TypeName="MatchModel.State">
+        <MappingFragment StoreEntitySet="State">
+          <ScalarProperty Name="state_id" ColumnName="state_id" />
+          <ScalarProperty Name="state_name" ColumnName="state_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="MatchModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

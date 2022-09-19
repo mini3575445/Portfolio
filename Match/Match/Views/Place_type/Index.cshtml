@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Match.Models.Place_type>
+
+@{
+    ViewBag.Title = "地點類別管理";
+    Layout = "~/Views/Shared/_Layout_manager.cshtml";
+}
+
+<h2>地點類別管理</h2>
+
+<p>
+    @Html.ActionLink("新增地點類別", "Create",null, new { @class = "btn btn-sm btn-info" })
+</p>
+<table class="table table-hover">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.place_type_id)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.place_type_name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.place_type_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.place_type_name)
+        </td>
+        <td>
+            @Html.ActionLink("修改", "Edit", new { id=item.place_type_id }, new { @class = "btn btn-sm btn-info" }) 
+            @Html.ActionLink("刪除", "Delete", new { id=item.place_type_id }, new { @class = "btn btn-sm btn-info" })
+        </td>
+    </tr>
+}
+
+</table>
